@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width">
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="icon" type="image/png" href="assets/img/favicon" />
+
+    <title>Storm Creative Front-End developer task</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Storm <span>Front-End test</span></h1>
+    </header>
+
+    <section class="register">
+        <button type="button" data-modal="register__modal" class="register__button">Register Today</button>
+        <div class="register__modal">
+        <a href="#" class="register__modal__close">&#10006;</a>
+
+            <h2>Register Today</h2>
+            <form accept-charset="utf-8" method="post"  class="register__form">
+                <input type="text" name="name" id="name" placeholder="Your Name" />
+                <input type="text" name="email" id="email" placeholder="Email Address" />
+                <input type="submit" value="Register Now" id="submit" />
+            </form>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function() {
+            $('button.register__button').click(function() {
+    
+                $('.register__modal').fadeIn(300);
+       
+                $('body').append('<div id="mask"></div>');
+
+                $('#mask').fadeIn(300);
+
+                $('a.register__modal__close, #mask').click(function() {
+                    $('#mask , .register__modal').fadeOut(300 , function() {$('#mask').remove();}); 
+                    return false;
+                });
+                return false;
+            });
+         });
+    </script>
+
+</body>
+
+</html>
