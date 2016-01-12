@@ -181,7 +181,7 @@ header {
         margin: 0 0 1% 0;
         padding: 0 0 0 1%;
 
-        @include prefix(border-radius, .2em, webkit moz o);
+        @include prefix(border-radius, .3em, webkit moz o);
         border: $inputUserBorder;
      }
 
