@@ -44,16 +44,15 @@
         $(document).ready(function() {
             $('button.register__button').click(function() {
     
-                $('.register__modal').fadeIn(300);
-       
+                $('.register__modal').fadeIn(300);       
                 $('body').append('<div id="mask"></div>');
-
                 $('#mask').fadeIn(300);
 
                 $('a.register__modal__close, #mask').click(function() {
                     $('#mask , .register__modal').fadeOut(300 , function() {$('#mask').remove();}); 
                     return false;
                 });
+
                 return false;
             });
          });
