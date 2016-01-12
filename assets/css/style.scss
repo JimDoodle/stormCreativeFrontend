@@ -2,7 +2,7 @@
 
 // Colours
 
-$highlightColour: #31759c;
+$highlightColour: #E51937;
 $alertColour: #9c3131;
 $contrastColour: #fff;
 $darkestColour: #000;
@@ -24,6 +24,7 @@ $buttonPadding: .5em 1.4em;
 $modalPadding: 2em;
 $sectionMargin: 1.4em;
 $modalTitleMargin: 0 0 1em 0;
+$modalSubmitButtonMargin: 1.4em 0 0 0;
 
 // Paths
 
@@ -161,6 +162,9 @@ header {
         @include textShadow(.02em, .02em, 0.2em, rgba(0, 0, 0, 0.6));
 
     }
+    input[type="submit"], input.submit{
+        margin: $modalSubmitButtonMargin; 
+    }
     .register__button:hover,  input[type="submit"]:hover, input.submit:hover  {
         cursor: pointer;
         background: lighten( $highlightColour, 10% )
@@ -232,7 +236,7 @@ header {
 
     .register {
          text-align: center;
-             .register_modal {
+             .register__modal {
                  top: 10%;
                  @include prefix(transform, translateY(-5%), webkit moz ms);
                  width: 90%;

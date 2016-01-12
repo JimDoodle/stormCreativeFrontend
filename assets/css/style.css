@@ -5,11 +5,11 @@ header:after {
 
 ::selection {
   color: #fff;
-  background: #31759c; }
+  background: #E51937; }
 
 ::-moz-selection {
   color: #fff;
-  background: #31759c; }
+  background: #E51937; }
 
 html, body {
   font-family: "Montserrat", sans-serif;
@@ -22,7 +22,7 @@ html, body {
   height: 100%; }
 
 a {
-  color: #31759c;
+  color: #E51937;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -74,7 +74,7 @@ header {
     -moz-border-radius: 0.5em;
     -o-border-radius: 0.5em;
     border-radius: 0.5em;
-    background: #31759c;
+    background: #E51937;
     color: #fff;
     border: none;
     padding: 0.5em 1.4em;
@@ -85,9 +85,11 @@ header {
     -o-transition: all 0.5s;
     transition: all 0.5s;
     text-shadow: 0.02em 0.02em 0.2em rgba(0, 0, 0, 0.6); }
+  .register input[type="submit"], .register input.submit {
+    margin: 1.4em 0 0 0; }
   .register .register__button:hover, .register input[type="submit"]:hover, .register input.submit:hover {
     cursor: pointer;
-    background: #3e92c2; }
+    background: #eb465e; }
   .register input.text, .register input[type="text"] {
     display: block;
     clear: both;
@@ -137,7 +139,7 @@ header {
 
   .register {
     text-align: center; }
-    .register .register_modal {
+    .register .register__modal {
       top: 10%;
       -webkit-transform: translateY(-5%);
       -moz-transform: translateY(-5%);
